@@ -11,8 +11,8 @@ namespace CardsEngine.Consoles
         static void Main(string[] args)
         {
 
-            var engine = new CardEngine(null, new ProcessCardFactory(null), new Policy { Brand = "Visa", Amount = 500, 
-                DeferPayment = Console.Core.Enums.DeferPaymentType.ThreeMonths });
+            var engine = new CardEngine(null, new ProcessCardFactory(null), new Policy { Brand = "Mastercard", Amount = 500, 
+                DeferPayment = Console.Core.Enums.DeferPaymentType.TwelveMonths });
             try
             {
                 var response =  engine.CreatePayment();

@@ -1,4 +1,5 @@
-﻿using CardsEngine.Console.Core.Model;
+﻿using CardsEngine.Console.Core.BusinessValidations.Impl;
+using CardsEngine.Console.Core.Model;
 using System;
 
 namespace CardsEngine.Console.Core.BusinessValidations
@@ -19,7 +20,7 @@ namespace CardsEngine.Console.Core.BusinessValidations
             }
             catch
             {
-                return null;
+                return new BusinessValidationUnknown();
             }
         }
     }
