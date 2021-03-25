@@ -36,9 +36,9 @@ namespace CardsEngine.Console.Core
             {
                 Data = new PaymentResponse
                 {
-                    Commission = commission
+                    Commission = commission,
+                    Total = commission + processCard.policy.Amount
                 }
-                //Total = commission + processCard.Amount
             };
         }
     }

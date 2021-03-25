@@ -11,7 +11,7 @@ namespace CardsEngine.Console.Core.BusinessValidations.Impl
             switch (deferralPayment)
             {
                 case DeferPaymentType.OnePayment:
-                    return new GenericReponse<bool> { Data = false, Error = new Model.Error { ValidationErrors = new List<string> { "El Pago minimo es de $50.00 MXN." } } };                    
+                    break;
                 case DeferPaymentType.ThreeMonths:
                     return new GenericReponse<bool> { Data = false, Error = new Model.Error { ValidationErrors = new List<string> { "El Pago minimo es de $300.00 MXN." } } };                   
                 case DeferPaymentType.SixMonths:
